@@ -1,6 +1,11 @@
 # Severino
-
 Conjunto de bibliotecoas com intuíto de ajudar e facilitar o uso de funcionalidades necessárias no dia a dia.
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=aldovrando-oliveira_severino)](https://sonarcloud.io/dashboard?id=aldovrando-oliveira_severino)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=aldovrando-oliveira_severino&metric=coverage)](https://sonarcloud.io/dashboard?id=aldovrando-oliveira_severino)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=aldovrando-oliveira_severino&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=aldovrando-oliveira_severino)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=aldovrando-oliveira_severino&metric=security_rating)](https://sonarcloud.io/dashboard?id=aldovrando-oliveira_severino)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=aldovrando-oliveira_severino&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=aldovrando-oliveira_severino)
 
 ## Componentes 
 
