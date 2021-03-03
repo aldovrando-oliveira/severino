@@ -16,5 +16,5 @@ dotnet build
 coverlet ./test/Severino.Extensions.Exceptions.Tests/bin/Debug/net5.0/Severino.Extensions.Exceptions.Tests.dll \
     --target "dotnet" \
     --targetargs "test ./test/Severino.Extensions.Exceptions.Tests/Severino.Extensions.Exceptions.Tests.csproj --no-build" \
-    --output "./coverage"
+    --output "./coverage" \
     --format "opencover"
