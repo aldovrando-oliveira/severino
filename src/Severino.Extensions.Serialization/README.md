@@ -37,7 +37,7 @@ namespsace AppTest
             
             var texto = cliente.ToJson();
             
-            Console.WrileLine(texto);
+            Console.WriteLine(texto);
             // Saida: '{ "nome": "Lampião" }'
         }
     }
@@ -67,7 +67,7 @@ public static void Main()
     //     settings.NullValueHandling = NullValueHandling.Ignore
     // });
     
-    Console.WrileLine(texto);
+    Console.WriteLine(texto);
     // Saida: '{ "nome": "Lampião" }'
 }
 ``` 
