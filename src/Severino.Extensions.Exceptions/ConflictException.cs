@@ -7,14 +7,14 @@ namespace Severino.Extensions.Exceptions
     /// Exceção de conflitos nas entidades
     /// </summary>
     [Serializable]
-    public class ConflictException : BaseException
+    public sealed class ConflictException : BaseException
     {
         /// <summary>
         /// Cria uma nova instância de <see cref="ConflictException"/>
         /// </summary>
-        /// <param name="info"></param>
-        /// <param name="context"></param>
-        protected ConflictException(SerializationInfo info, StreamingContext context)
+        /// <param name="info">Informações para a serialização</param>
+        /// <param name="context">Contexto para o stream</param>
+        private ConflictException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
