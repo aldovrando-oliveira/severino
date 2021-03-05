@@ -57,11 +57,11 @@ namespsace AppTest
         {
             try
             {
-                /* any code here */
+                /* qualquer código aqui */
             }
             catch(Exception ex)
             {
-                /* validations */
+                /* validações e tratativas */
                 
                 var notFoundEx = ex.ToEntityNotFoundException("Product", "#ABC500");
                 
