@@ -71,5 +71,51 @@ namespace Severino.Extensions.Exceptions
             string errorCode, string message) => new(entity, errorCode, message, exception);
 
         #endregion
+        
+        #region BadGatewayException
+
+        /// <summary>
+        /// Retorna uma exceção do tipo <see cref="BadGatewayException"/>
+        /// </summary>
+        /// <param name="exception">Exceção original</param>
+        /// <param name="message">Mensagem descritiva do erro</param>
+        /// <returns>Retorna uma nova instância de <see cref="BadGatewayException"/></returns>
+        public static BadGatewayException ToBadGatewayException(this Exception exception, string message) =>
+            new(message, exception);
+
+        /// <summary>
+        /// Retorna uma exceção do tipo <see cref="BadGatewayException"/>
+        /// </summary>
+        /// <param name="exception">Exceção original</param>
+        /// <param name="message">Mensagem descritiva do erro</param>
+        /// <param name="errorCode">Código de identificação do erro</param>
+        /// <returns>Retorna uma nova instância de <see cref="BadGatewayException"/></returns>
+        public static BadGatewayException ToBadGatewayException(this Exception exception, string message,
+            string errorCode) => new(message, errorCode, exception);
+
+        #endregion
+        
+        #region GatewayTimeout
+
+        /// <summary>
+        /// Retorna uma exceçção do tipo <see cref="GatewayTimeoutException"/>
+        /// </summary>
+        /// <param name="exception">Exceção original</param>
+        /// <param name="message">Mensagem descritiva do erro</param>
+        /// <returns>Retorna uma nova instância de <see cref="GatewayTimeoutException"/></returns>
+        public static GatewayTimeoutException ToGatewayTimeoutException(this Exception exception, string message) =>
+            new(message, exception);
+
+        /// <summary>
+        /// Retorna uma exceçção do tipo <see cref="GatewayTimeoutException"/>
+        /// </summary>
+        /// <param name="exception">Exceção original</param>
+        /// <param name="message">Mensagem descritiva do erro</param>
+        /// <param name="errorCode">Código de identificação do erro</param>
+        /// <returns>Retorna uma nova instância de <see cref="GatewayTimeoutException"/></returns>
+        public static GatewayTimeoutException ToGatewayTimeoutException(this Exception exception, string message,
+            string errorCode) => new(message, errorCode, exception);
+
+        #endregion
     }
 }
