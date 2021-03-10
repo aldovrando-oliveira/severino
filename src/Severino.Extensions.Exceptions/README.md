@@ -89,13 +89,14 @@ namespsace AppTest
 | ------------------------- | ----------------------------------------------------------------------------- |
 | EntityNotFoundException   | Quando a entidade pesquisada não é encontrada                                 |
 | ConflictException         | Alguma operação não pode ser executada devido a conflitos nas validações      |
-| GatewayTimeoutException   | Quando ocorre timeout na integração com algum serviço                         |
-| BadGatewayException       | Quando ocorrem erros na integrçaão com algum serviço                          |
+| GatewayTimeoutException   | Quando o tempo de espera excede o previsto na integração com algum serviço    |
+| BadGatewayException       | Quando ocorrem erros na integração com algum serviço                          |
 
 ## Funcionalidades
 
 - [x] Exceções 
-    - [x] Entidades não encontradas
-    - [x] Conflito
-    - [x] Erro no consumo de serviços
-- [ ] Handler para trataiva de exceções    
+    - [x] EntityNotFoundException - Entidades não encontradas
+    - [x] ConflictException - Conflito
+    - [x] BadGatewayException - Erro no consumo de serviços
+    - [x] GatewayTimeoutException - Tempo de espera excedido ao consumir um serviço
+- [ ] Handler para tratativa de exceções    
